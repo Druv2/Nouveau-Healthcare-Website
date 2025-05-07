@@ -135,10 +135,10 @@ body {
   }
   
   .services-list li {
-    flex: 1 1 140px;       /* reduce the base width from 220px to 140px */
+    flex: 1 1 60px;       /* reduce the base width from 220px to 140px */
     background: #f4a261;
     border-radius: 8px;
-    padding: 0.6rem;       /* reduce padding to make boxes less tall */
+    padding: 0.3rem;       /* reduce padding to make boxes less tall */
     text-align: center;
     color: #fff;
     font-weight: 600;
