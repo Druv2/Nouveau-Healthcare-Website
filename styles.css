@@ -1,0 +1,246 @@
+/* Nouveau Healthcare - Saffron & Blue Theme */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #e6f0fa; /* very light warm background */
+    color: #33354e; /* dark blue-gray text for readability */
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #264653; /* deep blue */
+    color: #f4a261; /* saffron */
+    padding: 1rem 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  nav h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #f4a261; /* saffron */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    color: #f4a261; /* saffron */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #e76f51; /* deeper saffron */
+  }
+  
+  .hero {
+    position: relative;
+    padding: 3rem 1rem;
+    text-align: center;
+    overflow: hidden;
+    color: #264653; /* Adjust text color for contrast */
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+  
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: #e76f51;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    filter: brightness(0.9);
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero-content {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }  
+  
+  .btn {
+    background: #264653;
+    color: #f4a261;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .btn:hover {
+    background: #2a9d8f;
+    color: #fff;
+  }
+  
+  section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem 1.5rem 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(229, 178, 87, 0.15);
+    color: #264653;
+  }
+  
+  h2 {
+    color: #264653;
+    margin-top: 0;
+    font-weight: 700;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .services-list li {
+    flex: 1 1 220px;
+    background: #f4a261;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(229, 178, 87, 0.4);
+    transition: background-color 0.3s ease;
+  }
+  
+  .services-list li:hover {
+    background: #e76f51;
+    cursor: default;
+  }
+  
+  blockquote {
+    font-style: italic;
+    background: #e9c46a;
+    border-left: 6px solid #264653;
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    color: #264653;
+    font-weight: 500;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input, textarea {
+    padding: 0.75rem;
+    border: 2px solid #e9c46a;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff8f0;
+    color: #264653;
+    transition: border-color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #264653;
+    outline: none;
+    background: #f0f4f8;
+  }
+  
+  button[type="submit"] {
+    background: #264653;
+    color: #f4a261;
+    border: none;
+    padding: 0.85rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background: #2a9d8f;
+    color: #fff;
+  }
+  
+  .contact-info {
+    margin-top: 1rem;
+    color: #264653;
+    font-weight: 600;
+  }
+  
+  footer {
+    background: #264653; /* deep blue */
+    color: #f4a261; /* saffron */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 700px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .services-list {
+      flex-direction: column;
+    }
+    section {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  }
+  .about-btn-group {
+    display: flex;
+    justify-content: center; /* centers buttons horizontally */
+    gap: 1rem; /* space between buttons */
+    flex-wrap: wrap; /* allows buttons to wrap on smaller screens */
+    margin-top: 1rem; /* optional spacing above buttons */
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center; /* centers buttons horizontally */
+    margin-top: 2rem;        /* space above the buttons */
+  }
+  

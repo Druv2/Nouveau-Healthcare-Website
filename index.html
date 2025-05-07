@@ -1,0 +1,84 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nouveau Healthcare</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><h1>Nouveau Healthcare</h1></a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-bg"></div> 
+    <div class="hero-content">
+      <h2>Your Oral Health, Our Priority</h2>
+      <p>Compassionate care for you and your family.</p>
+      <a href="#contact" class="btn">Book an Appointment</a>
+    </div>
+  </section>
+  
+ 
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Nouveau Healthcare is committed to providing quality, patient-centered dental healthcare in a comfortable environment. Using portable and transportation based healthcare, with mobile kits, we bring the dental care into the comfort of your own home. Not just the home, though. Our bus service and our vans offer services while transporting the patient from place to place.</p>
+    <div class="about-btn-group">
+    <a href="origin.html" class="btn">Our Origin</a>
+    <a href="belief.html" class="btn">Our Belief</a>
+    <a href="ourteam.html" class="btn">Our Team</a>
+    </div>
+  </section>  
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul class="services-list">
+      <li>General Consultation</li>
+      <li>Preventive Care</li>
+      <li>Specialist Referrals</li>
+      <li>Health Check-ups</li>
+      <li>Dental care</li>
+      <li>Portable care</li>
+      <li>Emergency calls</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="inquiry.html" method="GET">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="details" placeholder="Describe your Dental Problem" required></textarea>
+      <button type="submit">Send Inquiry</button>
+    </form>    
+    <div id="contactNotification" style="display:none; margin-top:1rem;"></div>  
+    <div class="contact-info">
+      <p>Office address: #16, 1st floor, A block, St. Patrick's shopping Arcade, Residency Road, Bangalore, 560025</p>
+      <p>Phone: 9448117350 (calls are only accepted between 9am to 3pm)</p>
+      <p>Emergency number: 8105767350 (For calls at any time aside from the main assigned time)</p>
+      <p>
+        For other contact purposes, please email us at 
+        <a href="https://mail.google.com/mail/?view=cm&to=drdevmp@gmail.com" target="_blank" rel="noopener noreferrer">
+          drdevmp@gmail.com
+        </a>.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2013 Nouveau Healthcare. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

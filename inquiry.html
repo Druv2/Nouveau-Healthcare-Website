@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inquiry Received - Nouveau Healthcare</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Optional: center content and style the inquiry details */
+    #inquiry-details p {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    #thank-you {
+      margin-top: 1.5rem;
+      color: #2a9d8f; /* bright blue */
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <section style="max-width: 700px; margin: 3rem auto; background: #fff; border-radius: 10px; box-shadow: 0 4px 12px rgba(229, 178, 87, 0.15); color: #264653; padding: 2rem;">
+    <h2>Inquiry Received</h2>
+    <div id="inquiry-details">
+      <!-- Inquiry details will be inserted here -->
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="index.html#home" class="btn">Back to Home</a>
+    </div>
+  </section>
+
+  <script>
+    // Parse URL query parameters
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name') || 'N/A';
+    const email = params.get('email') || 'N/A';
+    const details = params.get('details') || params.get('message') || 'N/A'; // support both 'details' and 'message' keys
+
+    // Display the inquiry details
+    const container = document.getElementById('inquiry-details');
+    container.innerHTML = `
+      <p><strong>Name:</strong> ${decodeURIComponent(name)}</p>
+      <p><strong>Email:</strong> ${decodeURIComponent(email)}</p>
+      <p><strong>Dental Problem:</strong> ${decodeURIComponent(details)}</p>
+      <p id="thank-you">Thank you for your inquiry! We have received your details and will contact you soon.</p>
+    `;
+  </script>
+
+<script src="inquiry.js"></script>
+
+</body>
+</html>
