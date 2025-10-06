@@ -1,84 +1,164 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nouveau Healthcare</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Druv Bopanna - Resume</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html"><h1>Nouveau Healthcare</h1></a>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="home" class="hero">
-    <div class="hero-bg"></div> 
-    <div class="hero-content">
-      <h2>Your Oral Health, Our Priority</h2>
-      <p>Compassionate care for you and your family.</p>
-      <a href="#contact" class="btn">Book an Appointment</a>
+  <nav class="navbar" style="width:100%;background:#e0f0f5;padding:12px 0 8px 0;box-shadow:0 2px 8px rgba(0,0,0,0.04);position:sticky;top:0;z-index:100;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:18px;justify-content:center;align-items:center;">
+      <div class="nav-item" style="position:relative;">
+        <a href="#profile" style="color:#005588;font-weight:600;text-decoration:none;padding:6px 12px;border-radius:4px;">Profile</a>
+        <div class="nav-heading" style="position:absolute;left:0;top:100%;background:#fff;border:1px solid #cbe0e7;padding:4px 12px;min-width:120px;display:none;z-index:10;font-size:14px;color:#003366;font-weight:700;">PROFILE</div>
+      </div>
+      <div class="nav-item" style="position:relative;">
+        <a href="#work-experience" style="color:#005588;font-weight:600;text-decoration:none;padding:6px 12px;border-radius:4px;">Work Experience</a>
+        <div class="nav-heading" style="position:absolute;left:0;top:100%;background:#fff;border:1px solid #cbe0e7;padding:4px 12px;min-width:120px;display:none;z-index:10;font-size:14px;color:#003366;font-weight:700;">WORK EXPERIENCE</div>
+      </div>
+      <div class="nav-item" style="position:relative;">
+        <a href="#strengths" style="color:#005588;font-weight:600;text-decoration:none;padding:6px 12px;border-radius:4px;">Strengths & Skills</a>
+        <div class="nav-heading" style="position:absolute;left:0;top:100%;background:#fff;border:1px solid #cbe0e7;padding:4px 12px;min-width:120px;display:none;z-index:10;font-size:14px;color:#003366;font-weight:700;">STRENGTHS AND SKILLS</div>
+      </div>
+      <div class="nav-item" style="position:relative;">
+        <a href="#education" style="color:#005588;font-weight:600;text-decoration:none;padding:6px 12px;border-radius:4px;">Education</a>
+        <div class="nav-heading" style="position:absolute;left:0;top:100%;background:#fff;border:1px solid #cbe0e7;padding:4px 12px;min-width:120px;display:none;z-index:10;font-size:14px;color:#003366;font-weight:700;">EDUCATION</div>
+      </div>
+      <div class="nav-item" style="position:relative;">
+        <a href="#software" style="color:#005588;font-weight:600;text-decoration:none;padding:6px 12px;border-radius:4px;">Softwares</a>
+        <div class="nav-heading" style="position:absolute;left:0;top:100%;background:#fff;border:1px solid #cbe0e7;padding:4px 12px;min-width:120px;display:none;z-index:10;font-size:14px;color:#003366;font-weight:700;">SOFTWARES</div>
+      </div>
+      <div class="nav-item" style="position:relative;">
+        <a href="#3d-works" style="color:#005588;font-weight:600;text-decoration:none;padding:6px 12px;border-radius:4px;">3D Works</a>
+        <div class="nav-heading" style="position:absolute;left:0;top:100%;background:#fff;border:1px solid #cbe0e7;padding:4px 12px;min-width:120px;display:none;z-index:10;font-size:14px;color:#003366;font-weight:700;">3D WORKS</div>
+      </div>
+      <div class="nav-item" style="position:relative;">
+        <a href="#contact" style="color:#005588;font-weight:600;text-decoration:none;padding:6px 12px;border-radius:4px;">Contact</a>
+        <div class="nav-heading" style="position:absolute;left:0;top:100%;background:#fff;border:1px solid #cbe0e7;padding:4px 12px;min-width:120px;display:none;z-index:10;font-size:14px;color:#003366;font-weight:700;">CONTACT</div>
+      </div>
+      <div class="nav-item" style="position:relative;">
+        <a href="#referrals" style="color:#005588;font-weight:600;text-decoration:none;padding:6px 12px;border-radius:4px;">Referrals</a>
+        <div class="nav-heading" style="position:absolute;left:0;top:100%;background:#fff;border:1px solid #cbe0e7;padding:4px 12px;min-width:120px;display:none;z-index:10;font-size:14px;color:#003366;font-weight:700;">REFERRALS</div>
+      </div>
+      <div class="nav-item" style="position:relative;">
+        <a href="#hobbies" style="color:#005588;font-weight:600;text-decoration:none;padding:6px 12px;border-radius:4px;">Hobbies</a>
+        <div class="nav-heading" style="position:absolute;left:0;top:100%;background:#fff;border:1px solid #cbe0e7;padding:4px 12px;min-width:120px;display:none;z-index:10;font-size:14px;color:#003366;font-weight:700;">HOBBIES</div>
+      </div>
     </div>
-  </section>
-  
- 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Nouveau Healthcare is committed to providing quality, patient-centered dental healthcare in a comfortable environment. Using portable and transportation based healthcare, with mobile kits, we bring the dental care into the comfort of your own home. Not just the home, though. Our bus service and our vans offer services while transporting the patient from place to place.</p>
-    <div class="about-btn-group">
-    <a href="origin.html" class="btn">Our Origin</a>
-    <a href="belief.html" class="btn">Our Belief</a>
-    <a href="ourteam.html" class="btn">Our Team</a>
+    <script>
+      document.querySelectorAll('.nav-item').forEach(function(item) {
+        item.addEventListener('mouseenter', function() {
+          item.querySelector('.nav-heading').style.display = 'block';
+        });
+        item.addEventListener('mouseleave', function() {
+          item.querySelector('.nav-heading').style.display = 'none';
+        });
+      });
+    </script>
+  </nav>
+  <div class="container">
+    <div class="header">
+      <div class="name-section"> 
+        <h1>WEB DEVELOPMENT ASSIGNMENT RESUME</h1>
+        <h2>DRUV BOPANNA MD</h2>
+        <p class="subtitle">Aspiring Concept-to-Reality 3D Designer and Modeler</p>
+      </div>
+  <img src="assets/Smaller picture of me.png" alt="Druv Bopanna Profile" class="profile-image" />
     </div>
-  </section>  
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul class="services-list">
-      <li>General Consultation</li>
-      <li>Preventive Care</li>
-      <li>Specialist Referrals</li>
-      <li>Health Check-ups</li>
-      <li>Dental care</li>
-      <li>Portable care</li>
-      <li>Emergency calls</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="inquiry.html" method="GET">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="details" placeholder="Describe your Dental Problem" required></textarea>
-      <button type="submit">Send Inquiry</button>
-    </form>    
-    <div id="contactNotification" style="display:none; margin-top:1rem;"></div>  
-    <div class="contact-info">
-      <p>Office address: #16, 1st floor, A block, St. Patrick's shopping Arcade, Residency Road, Bangalore, 560025</p>
-      <p>Phone: 9448117350 (calls are only accepted between 9am to 3pm)</p>
-      <p>Emergency number: 8105767350 (For calls at any time aside from the main assigned time)</p>
-      <p>
-        For other contact purposes, please email us at 
-        <a href="https://mail.google.com/mail/?view=cm&to=drdevmp@gmail.com" target="_blank" rel="noopener noreferrer">
-          drdevmp@gmail.com
-        </a>.
-      </p>
+    <div class="profile">
+  <h3 id="profile">PROFILE</h3>
+      <p>I am a person who sees things by the process that they take to achieve. Nothing is too big or too small. I am a perfectionist and symmetrically minded person in that I like seeing things complete and I prefer absolute fairness. I am always open minded and will accept criticism at any point for my actions and always learn from my mistakes.</p>
     </div>
-  </section>
 
-  <footer>
-    <p>&copy; 2013 Nouveau Healthcare. All rights reserved.</p>
-  </footer>
+    <div class="upper-section">
+      <div class="left-column">
+        <div class="work-experience">
+          <h3 id="work-experience">WORK EXPERIENCE</h3>
+          <p><strong><a href="https://excelpublicschool.com" target="_blank" rel="noopener">Excel Public School</a>, Koorgalli, Mysore</strong><br/>Interned for a month as a 3D artist in the innovation center under <b><a href="https://aim.gov.in/atl.php" target="_blank" rel="noopener">Atal Tinkering Labs (ATL)</a></b> by the government through <b><a href="https://www.excelsoftcorp.com" target="_blank" rel="noopener">EXCELSOFT Pvt. Ltd.</a></b></p>
+        </div>
 
-  <script src="script.js"></script>
+        <div class="strengths">
+          <h3 id="strengths">STRENGTHS AND SKILLS</h3>
+          <div class="skills-grid">
+            <div class="skill-item"><span>LEARNING</span><div class="skill-bar"><div class="fill" style="width: 80%;"></div></div><span class="percent">80%</span></div>
+            <div class="skill-item"><span>SKILLS</span><div class="skill-bar"><div class="fill" style="width: 80%;"></div></div><span class="percent">80%</span></div>
+            <div class="skill-item"><span>PRACTICAL THINKING</span><div class="skill-bar"><div class="fill" style="width: 60%;"></div></div><span class="percent">60%</span></div>
+            <div class="skill-item"><span>VIDEO EDITING</span><div class="skill-bar"><div class="fill" style="width: 80%;"></div></div><span class="percent">80%</span></div>
+            <div class="skill-item"><span>3D PRINTING</span><div class="skill-bar"><div class="fill" style="width: 80%;"></div></div><span class="percent">80%</span></div>
+            <div class="skill-item"><span>3D MODELLING</span><div class="skill-bar"><div class="fill" style="width: 80%;"></div></div><span class="percent">80%</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div class="education">
+          <h3 id="education">EDUCATION</h3>
+          <p><strong><a href="https://www.npsinr.com/" target="_blank" rel="noopener">NPS Indiranagar</a></strong> <b>(2007 - 2020)</b><br/><b>Commerce</b> (11th & 12th grade)</p>
+          <p><strong><a href="https://www.sjc.ac.in/" target="_blank" rel="noopener">St. Josephs Autonomous College</a></strong> <b>(2020 - 2022)</b> (Discontinued)<br/><b>B.Voc. in Digital Media and Animation</b> (2 years completed)</p>
+          <p><strong><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy Courses</a></strong><br/>Currently doing multiple courses in 3D modelling and design</p>
+          <p><strong><a href="https://www.iimb.ac.in/" target="_blank" rel="noopener">IIM Bangalore</a></strong> <b>(2024 - 2027)</b><br/>Currently doing the <b>BBA DBE</b> course</p>
+        </div>
+
+        <div class="software">
+          <h3 id="software">SOFTWARES</h3>
+          <ul>
+            <li><b><a href="https://www.blender.org/" target="_blank" rel="noopener">Blender</a></b> - Main software for 3D</li>
+            <li><b><a href="https://www.adobe.com/products/premiere.html" target="_blank" rel="noopener">Adobe Premiere Pro</a></b> - Basics of Video editing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-right blue-section">
+      <div style="display: flex; align-items: center;">
+        <a href="3d-models.html" style="margin-right: 16px; font-weight: bold; text-decoration: underline;">View All 3D Models</a>
+        <h3 id="3d-works" style="margin: 0;">3D WORKS</h3>
+      </div>
+      <div class="image-gallery right">
+  <img src="assets/Katana out of saya on katana kake on exhibit.png" alt="3D Project 1" class="gallery-image">
+  <img src="assets/untitled.png" alt="3D Project 2" class="gallery-image">
+  <img src="assets/Robot.png" alt="3D Project 3" class="gallery-image">
+  <img src="assets/Table with fruit bowl and bottle tablecloth.png" alt="3D Project 4" class="gallery-image">
+      </div>
+    </div>
+
+    <div class="lower-section">
+      <div class="contact">
+        <h3 id="contact">CONTACT</h3>
+        <p><b>PHONE </b><a href="tel:+918861578214">+91 8861578214</a></p>
+        <p><b>EMAIL </b><a href="https://mail.google.com/mail/?view=cm&fs=1&to=druvbopanna@gmail.com" target="_blank">druvbopanna@gmail.com</a></p>
+        <div class="referrals" style="margin-top:20px;">
+          <h3 id="referrals">REFERRALS</h3>
+          <p><b>Ms. Sandya </b><a href="tel:+919448117350">+91 9448117350</a></p>
+          <p><b>Dr.Devaiah </b><a href="tel:+919902553640">+91 9902553640</a></p>
+        </div>
+      </div>
+
+      <div class="hobbies">
+  <h3 id="hobbies">HOBBIES</h3>
+        <ul>
+          <li>Shooting</li>
+          <li>Cycling</li>
+          <li>Swimming</li>
+          <li>Gaming</li>
+          <li>3D</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
